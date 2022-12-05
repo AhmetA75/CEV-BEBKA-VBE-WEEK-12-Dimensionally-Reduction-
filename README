@@ -1,0 +1,28 @@
+CEV-BEBKA-VBE-WEEK-12
+
+TASK-12A: Please use linear (PCA) and nonlinear (LLE, ISOMAP) dimensionality reduction methods using MR metrics to visualize the patients with their different CDRGLOB values/levels to understand whether there are visible patterns. Please first only use the first two dimensions in your visualizations.
+
+TASK-12B: Please develop 3 separate predictive models with respect to the datasets with reduced dimensions (but use dimension/component number as 7) in part-A. Then use 3 different algorithms to provide classification models to predict CDRGLOB and compare the outputs of these 9 models. (train-test split = 0.75 and 0.25) 3 algorithms are Gaussian Naive Bayes, SVM (rbf), and RandomForestClassifier 
+
+For this task, please use them with their default parameter values and provide the classification report and confusion matrix for each of these.
+
+TASK-12C: Please combine these four datasets (pca-iso-lle-tsne) and then use an algorithm of your interest separately on this dataset to predict the CDRGLOB values while using grid search to optimize the hyperparameters. Please use the first 5 components from each of these 4 datasets. Please do not forget to apply minmax scaling before the dimensionality reduction operations. 
+
+TASK-12D: Please use the new dataset (selected) beginning with the 16th column after scaling it with minmax scaler. Then apply the k-means algorithm on the scaled dataset for k=4 and then visualize it with respect to their labels on 2 dimensions obtained via tSNE. 
+
+TASK-12E: Please use the silhouette algorithm to find the optimal number of clusters (k=2, 3, 4, …. 50). Please visualize the silhouette scores within this range and decide the most appropriate cluster number. Then apply the suitable cluster number using K-means. 
+
+TASK-12F: Please use the final dataset but this time add the following columns and then run the model with grid search optimization:
+-	SEX
+-	INDEPEND
+-	NPISCORE
+-	FAQ
+
+TASK-12G: Then for comparison purposes, use only these four columns to develop a model):
+
+-	SEX
+-	INDEPEND
+-	NPISCORE
+-	FAQ
+
+
